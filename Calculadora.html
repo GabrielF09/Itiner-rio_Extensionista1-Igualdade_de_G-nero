@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataImpact - Cálculo Social</title>
+    <link rel="stylesheet" href="Calculadora.css">
+    <script src="Calculadora.js" defer></script> 
+</head>
+<body>
+
+    <header class="site-header">
+        <h1>Simuladores de Impacto: ODS 5</h1>
+    </header>
+
+    <nav class="main-nav">
+        <ul>
+            <li><a href="Principal.html">Home</a></li>
+            <li><a href="Referencias.html">Sobre a ODS</a></li>
+        </ul>
+    </nav>
+
+    <main class="content-wrapper">
+        <h2 class="titulo-sessao">Ferramentas de Análise de Dados</h2>
+        
+        <div class="container-calculadoras">
+            
+            <div class="card">
+                <h3>💰 Gap Salarial</h3>
+                <p>Descubra a projeção da diferença salarial média entre gêneros.</p>
+                <input type="number" id="input-salario" placeholder="Digite seu salário R$">
+                <button onclick="calcular('gap-salarial')">Simular Diferença</button>
+                <input type="text" id="resultado-gap" class="resultado" readonly>
+            </div>
+
+            <div class="card">
+                <h3>👥 Equipe 50/50</h3>
+                <p>Quantas mulheres são necessárias para atingir a paridade?</p>
+                <input type="number" id="input-equipe" placeholder="Total de colaboradores">
+                <button onclick="calcular('representatividade')">Calcular Meta</button>
+                <input type="text" id="resultado-equipe" class="resultado" readonly>
+            </div>
+
+            <div class="card">
+                <h3>⏳ Dupla Jornada</h3>
+                <p>Impacto das horas semanais em tarefas domésticas não pagas.</p>
+                <input type="number" id="input-horas" placeholder="Suas horas domésticas">
+                <button onclick="calcular('dupla-jornada')">Ver Impacto</button>
+                <input type="text" id="resultado-horas" class="resultado" readonly>
+            </div>
+
+            <div class="card">
+                <h3>🚀 Liderança</h3>
+                <p>Projeção de mulheres em cargos de diretoria (Meta 5.5).</p>
+                <input type="number" id="input-lideres" placeholder="Total de Diretores">
+                <button onclick="calcular('lideranca')">Projetar Meta</button>
+                <input type="text" id="resultado-lideres" class="resultado" readonly>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <p>Desenvolvido para fins educacionais - ODS 5</p>
+    </footer>
+
+</body>
+</html>

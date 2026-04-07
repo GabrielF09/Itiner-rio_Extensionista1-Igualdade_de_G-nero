@@ -1,0 +1,116 @@
+:root {
+    --primeiroFundo-color: #fce4ec;
+    --segundoFundo-color: #ffffff;
+    --terciaria-color: #e91e63;
+    --texto-color: #880e4f;
+}
+
+body {
+    font-family: "Roboto", sans-serif;
+    background: linear-gradient(180deg, var(--primeiroFundo-color) 0%, #ffffff 100%);
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.site-header {
+    background-color: var(--texto-color);
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+    border-bottom: dashed 3.5px var(--terciaria-color);
+}
+
+.main-nav {
+    background-color: var(--terciaria-color);
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-nav a {
+    display: block;
+    padding: 18px 35px;
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+    transition: all 0.4s ease-in-out; 
+    border-bottom: 4px solid transparent; 
+}
+
+.main-nav a:hover {
+    background-color: var(--texto-color);
+    border-bottom: 4px solid #ffffff;
+    transform: translateY(-2px);
+    color: #fce4ec;
+}
+
+.content-wrapper {
+    width: 70%; 
+    margin: 40px auto; 
+    background-color: var(--segundoFundo-color);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(136, 14, 79, 0.1);
+    box-sizing: border-box;
+    min-height: 400px;
+}
+
+.img-area {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    margin: 20px 0;
+}
+
+.img-area img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    border: 3px solid var(--terciaria-color);
+    display: block;
+}
+
+blockquote {
+    font-size: 1.2rem;
+    color: var(--texto-color);
+    font-style: italic;
+    border-left: 5px solid var(--terciaria-color);
+    padding: 15px 25px;
+    margin: 25px 0;
+    background: #fef4f7;
+    line-height: 1.6;
+}
+
+.lista-bibliografia {
+    text-align: left;
+    line-height: 2;
+}
+
+.lista-bibliografia li strong {
+    color: var(--texto-color);
+}
+
+.site-footer {
+    width: 100%;
+    background-color: var(--texto-color);
+    padding: 20px 0;
+    margin-top: 50px;
+    text-align: center;
+    border-top: solid 4px var(--terciaria-color);
+}
+
+.site-footer p {
+    color: white;
+    margin: 0;
+    letter-spacing: 1px;
+}
